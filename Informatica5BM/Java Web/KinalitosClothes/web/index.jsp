@@ -5,11 +5,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>K.C - Inicio</title>
+        <title>V.Z - Inicio</title>
         <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/Images/Logo_K.C.png">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/Styles/menu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
 
     <body>
@@ -168,6 +170,29 @@
                 </div>
             </button>
         </section>
+        <!-- Carrusel Bootstrap con controles -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="max-width: 800px; margin: 40px auto;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="${pageContext.request.contextPath}/Images/carrusel.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="${pageContext.request.contextPath}/Images/wtf.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="${pageContext.request.contextPath}/Images/carrrusel3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        <!-- Fin Carrusel Bootstrap con controles -->
         <!-- SECTOR 4: RESEÃAS Y BANNER -->
         <section class="resenas-clientes">
             <h2 class="titulo-resenas">RESEÑAS DE NUESTROS CLIENTES</h2>
@@ -293,6 +318,11 @@
                 © Todos los derechos reservados por KinalitosClothes 👻
             </div>
         </footer>
+        <!-- Bootstrap JS y dependencias -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 
 </html>
+``` 
